@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"?>
+<config>
+	<modules>
+		<Plumrocket_Faq>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Plumrocket_Faq>
+	</modules>
+</config>
