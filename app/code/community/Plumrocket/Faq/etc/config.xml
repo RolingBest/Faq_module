@@ -1,10 +1,34 @@
 <?xml version="1.0" ?>
 <config>
+
     <modules>
         <Plumrocket_Faq>
             <version>0.0.1</version>
         </Plumrocket_Faq>
     </modules>
+	
+	<admin>
+        <routers>
+            <plumrocketfaq_admin>
+                <use>admin</use>
+                <args>
+                    <module>Plumrocket_Faq</module>
+                    <frontName>plumrocketfaq_admin</frontName>
+                </args>
+            </plumrocketfaq_admin>
+        </routers>
+    </admin>
+	
+	 <adminhtml>
+        <menu>
+            <plumrocketfaq module="plumrocketfaq">
+                <title>Plumrocket</title>
+                <sort_order>77</sort_order>
+                <action>plumrocketfaq_admin/adminhtml_faq</action>
+            </plumrocketfaq>
+        </menu>
+    </adminhtml>
+	
 	<frontend>
 		<layout>
             <updates>
@@ -23,7 +47,21 @@
             </plumrocketfaq>
         </routers>
     </frontend>
+	
 	<global>
+	
+		 <blocks>
+            <plumrocketfaq>
+                <class>Plumrocket_Faq_Block</class>
+            </plumrocketfaq>
+        </blocks>
+		
+		<helpers>
+            <plumrocketfaq>
+                <class>Plumrocket_Faq_Helper</class>
+            </plumrocketfaq>
+        </helpers>
+		
 		<models>
             <plumrocketfaq>
                 <class>Plumrocket_Faq_Model</class>
@@ -38,6 +76,7 @@
                 </entities>
             </plumrocketfaq_resource>
         </models>
+		
         <resources>
             <plumrocketfaq_setup>
                 <setup>
@@ -45,5 +84,6 @@
                 </setup>
             </plumrocketfaq_setup>
         </resources>
+		
     </global>
 </config>

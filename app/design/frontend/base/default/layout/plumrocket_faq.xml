@@ -2,7 +2,12 @@
 <layout>
     <plumrocketfaq_index_index>
         <reference name="content">
-            <block type="core/template" template="plumrocketfaq/index.phtml" />
+            <block type="plumrocketfaq/faqs" template="plumrocket_faq/index.phtml" />
         </reference>
     </plumrocketfaq_index_index>
+	<plumrocketfaq_index_view>
+        <reference name="content">
+            <block type="plumrocketfaq/view" name="faqs.content" template="plumrocket_faq/view.phtml" />
+        </reference>
+    </plumrocketfaq_index_view>
 </layout>
