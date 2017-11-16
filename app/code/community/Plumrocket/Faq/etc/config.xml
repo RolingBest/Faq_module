@@ -30,7 +30,7 @@
                 <resourceModel>plumrocketfaq_resource</resourceModel>
             </plumrocketfaq>
             <plumrocketfaq_resource>
-				<class>DS_News_Model_Resource</class>
+				<class>Plumrocket_Faq_Model_Resource</class>
                 <entities>
                     <table_faq>
                         <table>plumrocket_faq_entities</table>

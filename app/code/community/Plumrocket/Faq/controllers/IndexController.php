@@ -12,11 +12,11 @@ class Plumrocket_Faq_IndexController extends Mage_Core_Controller_Front_Action
             echo '<h2><a href="' . $viewUrl . '?id=' . $item->getId() . '">' . $item->getTitle() . '</a></h2>';
         }
     }
-	
-	public function viewAction()
+
+    public function viewAction()
     {
-        $faqsId = Mage::app()->getRequest()->getParam('id', 0);
-        $faqs = Mage::getModel('plumrocketfaq/faqs')->load($faqsId);
+        $faqssId = Mage::app()->getRequest()->getParam('id', 0);
+        $faqs = Mage::getModel('plumrocketfaq/faqs')->load($faqssId);
 
         if ($faqs->getId() > 0) {
             echo '<h1>' . $faqs->getTitle() . '</h1>';

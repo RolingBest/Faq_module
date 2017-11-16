@@ -1,6 +1,6 @@
 <?php
 
-class Plumrocket_Faq_Model_Resource_News extends Mage_Core_Model_Mysql4_Abstract
+class Plumrocket_Faq_Model_Resource_Faqs extends Mage_Core_Model_Mysql4_Abstract
 {
 
     public function _construct()
