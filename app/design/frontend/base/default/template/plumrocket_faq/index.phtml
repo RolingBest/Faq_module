@@ -3,6 +3,7 @@ $faqs = $this->getFaqsCollection();
 $faqsViewUrl = Mage::getUrl('faqs/index/view');
 ?>
 <h1>Faqs</h1>
+
 <?php foreach ($faqs as $item): ?>
     <h2>
         <a href="<?php echo $faqsViewUrl; ?>?id=<?php echo $item->getId(); ?>">

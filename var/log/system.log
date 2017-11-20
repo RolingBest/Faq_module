@@ -1,0 +1,24 @@
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 42: parser error : Opening and ending tag mismatch: children line 34 and action1  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): 						&lt;/action1&gt;  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): 						          ^  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 44: parser error : Opening and ending tag mismatch: action1 line 29 and children  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): 				&lt;/children&gt;  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): 				           ^  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 46: parser error : Opening and ending tag mismatch: children line 28 and action1  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): 						&lt;/action1&gt;  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): 						          ^  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 48: parser error : Opening and ending tag mismatch: plumrocketfaq line 24 and children  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): 				&lt;/children&gt;  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): 				           ^  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 50: parser error : Opening and ending tag mismatch: menu line 23 and plumrocketfaq  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string():             &lt;/plumrocketfaq&gt;  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string():                             ^  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 51: parser error : Opening and ending tag mismatch: adminhtml line 22 and menu  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string():         &lt;/menu&gt;  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string():                ^  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 52: parser error : Opening and ending tag mismatch: config line 2 and adminhtml  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string():     &lt;/adminhtml&gt;  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string():                 ^  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 54: parser error : Extra content at the end of the document  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): 	&lt;frontend&gt;  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510
+2017-11-20T21:01:49+00:00 ERR (3): Warning: simplexml_load_string(): 	^  in C:\web\htdocs\magento\lib\Varien\Simplexml\Config.php on line 510

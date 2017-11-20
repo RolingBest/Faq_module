@@ -26,11 +26,6 @@ class Plumrocket_Faq_Block_Adminhtml_Faqs_Edit_Tabs_General extends Mage_Adminht
             'required' => true,
             'name' => 'content',
         ));
-		
-		$fieldset->addField('image', 'image', array(
-            'label' => $helper->__('Image'),
-            'name' => 'image',
-        ));
 
         $fieldset->addField('created', 'date', array(
             'format' => Mage::app()->getLocale()->getDateFormat(Mage_Core_Model_Locale::FORMAT_TYPE_SHORT),
@@ -39,8 +34,7 @@ class Plumrocket_Faq_Block_Adminhtml_Faqs_Edit_Tabs_General extends Mage_Adminht
             'name' => 'created'
         ));
 
-		$formData = array_merge($model->getData(), array('image' => $model->getImageUrl()));
-        
+		
 		$form->setValues($formData);
         $this->setForm($form);
 
