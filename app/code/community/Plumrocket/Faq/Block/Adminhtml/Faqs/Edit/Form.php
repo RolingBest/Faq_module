@@ -2,9 +2,17 @@
 
 class Plumrocket_Faq_Block_Adminhtml_Faqs_Edit_Form extends Mage_Adminhtml_Block_Widget_Form
 {
+	protected function _prepareLayout()
+	{
+		$return = parent::_prepareLayout();
+		if (Mage::getSingleton('cms/wysiwyg_config')->isEnabled()) {
+			$this->getLayout()->getBlock('head')->setCanLoadTinyMce(true);
+		}
+	}
+	
 	protected function _prepareForm()
     {
-      
+		
         $helper = Mage::helper('plumrocketfaq');
         $model = Mage::registry('current_faqs');
 
@@ -28,7 +36,9 @@ class Plumrocket_Faq_Block_Adminhtml_Faqs_Edit_Form extends Mage_Adminhtml_Block
         ));
 
         $fieldset->addField('content', 'editor', array(
-            'label' => $helper->__('Content'),
+            //'label' => Mage::helper('editor')->__('Content'),
+			'config'    => Mage::getSingleton('cms/wysiwyg_config')->getConfig(),
+			'style' => 'height:36em;',
             'required' => true,
             'name' => 'content',
         ));

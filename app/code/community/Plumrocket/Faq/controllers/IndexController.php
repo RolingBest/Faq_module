@@ -10,7 +10,7 @@ class Plumrocket_Faq_IndexController extends Mage_Core_Controller_Front_Action
 
     public function viewAction()
     {
-        $faqsId = Mage::app()->getRequest()->getParam('title', 0);
+		$faqsId = Mage::app()->getRequest()->getParam('id', 0);
 		$faqs = Mage::getModel('plumrocketfaq/faqs')->load($faqsId);
 		
 
@@ -23,5 +23,6 @@ class Plumrocket_Faq_IndexController extends Mage_Core_Controller_Front_Action
         } else {
             $this->_forward('noRoute');
         }
+
     }
 }
