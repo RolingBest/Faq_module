@@ -21,9 +21,11 @@ $table = $installer->getConnection()
     ->addColumn('content', Varien_Db_Ddl_Table::TYPE_TEXT, null, array(
         'nullable'  => false,
         ))
-    ->addColumn('created', Varien_Db_Ddl_Table::TYPE_DATETIME, null, array(
-        'nullable'  => false,
+   ->addColumn('is_active', Varien_Db_Ddl_Table::TYPE_BOOLEAN, 1, array(
+    'nullable' => false,
+    'default' => 0,
     ));
 $installer->getConnection()->createTable($table);
 
 $installer->endSetup();
+

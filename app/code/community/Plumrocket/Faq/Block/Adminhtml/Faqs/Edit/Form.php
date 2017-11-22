@@ -43,11 +43,10 @@ class Plumrocket_Faq_Block_Adminhtml_Faqs_Edit_Form extends Mage_Adminhtml_Block
             'name' => 'content',
         ));
 
-        $fieldset->addField('created', 'date', array(
-            'format' => Mage::app()->getLocale()->getDateFormat(Mage_Core_Model_Locale::FORMAT_TYPE_SHORT),
-            'image' => $this->getSkinUrl('images/grid-cal.gif'),
-            'label' => $helper->__('Created'),
-            'name' => 'created'
+        $fieldset->addField('is_active', 'select', array(
+			'values' => array('0' => 'disable','1' => 'enable'),
+            'label' => $helper->__('is_active'),
+            'name' => 'is_active'
         ));
 
         $form->setUseContainer(true);

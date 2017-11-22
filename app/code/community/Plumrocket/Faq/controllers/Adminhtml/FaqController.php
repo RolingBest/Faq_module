@@ -39,9 +39,9 @@ class Plumrocket_Faq_Adminhtml_FaqController extends Mage_Adminhtml_Controller_A
             try {
                 $model = Mage::getModel('plumrocketfaq/faqs');
                 $model->setData($data)->setId($this->getRequest()->getParam('id'));
-                if(!$model->getCreated()){
+               /* if(!$model->getCreated()){
                     $model->setCreated(now());
-                }
+                }*/
                 $model->save();
 
                 Mage::getSingleton('adminhtml/session')->addSuccess($this->__('Faqs was saved successfully'));

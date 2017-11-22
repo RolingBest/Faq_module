@@ -25,10 +25,10 @@ class Plumrocket_Faq_Block_Adminhtml_Faqs_Grid extends Mage_Adminhtml_Block_Widg
             'type' => 'text',
         ));
 
-        $this->addColumn('created', array(
-            'header' => $helper->__('Created'),
-            'index' => 'created',
-            'type' => 'date',
+        $this->addColumn('is_active', array(
+            'header' => $helper->__('is_active'),
+            'index' => 'is_active',
+            'type' => 'boolean',
         ));
 
         return parent::_prepareColumns();
