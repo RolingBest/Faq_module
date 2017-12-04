@@ -16,9 +16,10 @@ class Plumrocket_Faq_IndexController extends Mage_Core_Controller_Front_Action
 
         if ($faqs->getId() > 0) {
             $this->loadLayout();
-            $this->getLayout()->getBlock('faqs.content')->assign(array(
+            
+			/*$this->getLayout()->getBlock('faqs.content')->assign(array(
                 "faqsItem" => $faqs,
-            ));
+            ));*/
             $this->renderLayout();
         } else {
             $this->_forward('noRoute');

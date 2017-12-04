@@ -1,0 +1,43 @@
+<config>
+    <tabs>
+        <plumrocket_faq>
+            <label>FAQ</label>
+            <sort_order>100000</sort_order>
+        </plumrocket_faq>
+    </tabs>
+    <sections>
+        <faq_section>
+            <label>Plumrocket</label>
+            <tab>plumrocket_faq</tab>
+            <sort_order>910</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            
+			<groups>            
+				<settings translate="label">
+				<label>Settings</label>
+				<frontend_type>text</frontend_type>
+				<sort_order>1</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>1</show_in_store>
+			
+			
+				<fields>
+					<enable translate="label">
+						<label>Enable</label>
+						<frontend_type>select</frontend_type>
+						<source_model>adminhtml/system_config_source_yesno</source_model>
+						<sort_order>0</sort_order>
+						<show_in_default>1</show_in_default>
+						<show_in_website>1</show_in_website>
+						<show_in_store>1</show_in_store>
+						<comment>enable/disable the module</comment>
+					</enable>
+				</fields>
+				</settings>
+			</groups>
+        </faq_section>
+    </sections>
+</config>
