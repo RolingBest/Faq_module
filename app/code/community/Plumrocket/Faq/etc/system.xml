@@ -25,7 +25,7 @@
 			
 			
 				<fields>
-					<enable translate="label">
+					<enable translate="label" module="plumrocket_faq">
 						<label>Enable</label>
 						<frontend_type>select</frontend_type>
 						<source_model>adminhtml/system_config_source_yesno</source_model>
