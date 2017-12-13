@@ -2,7 +2,7 @@
 $faqs = $this->getFaqsCollection();
 $faqsViewUrl = Mage::getUrl('faqs/index/view');
 ?>
-
+<?php if (Mage::getStoreConfig('faq_section/settings/enable')) :?>
 <?php foreach ($faqs as $item): ?>
     <h2>
         <a href="<?php echo $faqsViewUrl; ?>?id=<?php echo $item->getId(); ?>">
@@ -10,3 +10,4 @@ $faqsViewUrl = Mage::getUrl('faqs/index/view');
         </a>
     </h2>
 <?php endforeach; ?>
+<?php endif; ?>

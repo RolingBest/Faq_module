@@ -2,5 +2,7 @@
 $faqsItem = $this->getItem();
 ?>
 
-<h1><?php echo $faqsItem->getTitle(); ?></h1>
-<div class="content"><?php echo $faqsItem->getContent(); ?></div>
+<?php if (Mage::getStoreConfig('faq_section/settings/enable')) :?>
+	<h1><?php echo $faqsItem->getTitle(); ?></h1>
+	<div class="content"><?php echo $faqsItem->getContent(); ?></div>
+<?php endif; ?>
