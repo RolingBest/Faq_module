@@ -4,13 +4,24 @@ class Plumrocket_Faq_IndexController extends Mage_Core_Controller_Front_Action
 {
 	public function indexAction()
     {
-        $this->loadLayout();
-        $this->renderLayout();
+		if (Mage::getStoreConfig('faq_section/settings/enable')) {
+            $this->loadLayout();
+			$this->renderLayout();
+        } else {
+            $this->_forward('noRoute');
+        }
+    
+        
     }
 
     public function viewAction()
     {
-		$this->loadLayout();
-		$this->renderLayout();
-    }
+		
+		if (Mage::getStoreConfig('faq_section/settings/enable')) {
+            $this->loadLayout();
+			$this->renderLayout();
+        } else {
+            $this->_forward('noRoute');
+        }
+	}
 }
